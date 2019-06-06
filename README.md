@@ -1,4 +1,4 @@
 # einstein's website
 
 ###Domains
-- [ ] [einstein in netlify](einsteineducation.netlify.com)
+- [ ] [einstein in netlify](https://www.einsteineducation.netlify.com)
