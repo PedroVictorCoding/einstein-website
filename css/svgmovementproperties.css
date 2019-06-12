@@ -1,0 +1,30 @@
+svg {
+	max-width: 500px;
+	width: device-width;
+	align-self: center;
+	align-items: center;
+	align-content: center;
+	justify-self: center;
+}
+
+svg #Logo {
+	animation-duration: 2.5s;
+	animation-name: animateLogo;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+#Logo{
+	opacity: 0;
+}
+
+@keyframes animateLogo {
+	from{
+		transform: translateX(0) translateY(0);
+		opacity: 0;
+	}
+	to{
+		transform: translate(120px) translateY(-45px);
+		opacity: 1;
+	}
+}
