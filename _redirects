@@ -1,2 +1,3 @@
 # Redirect to coming soon
-/home /comingsoon.html
+/home /comingsoon.html 302
+/ /comingsoon.html 302
