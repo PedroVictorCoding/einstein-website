@@ -51,13 +51,26 @@
 
 	h1, h2, h3, h4, h5, h6{
 		min-width: device-width;
-		font-family: Helvetica;
+		font-family: arial;
 		color: #FFFFFF;
 	}
 
 	h1{
 		font-size: 60px;
 	}
+
+	@media only screen and (max-width: 500px) {
+		#resizedremover {
+			display: none;
+}
+		#resizedadder{
+			display: contents;
+	}
+}
+@media only screen and (min-width: 500px) {
+	#resizedadder {
+		display: none;
+}
 
 
 .st0{display:none;}
@@ -98,10 +111,3 @@
 	.st35{display:inline;fill:none;stroke:#FFFFFF;stroke-width:9;stroke-miterlimit:10;}
 	.st36{display:inline;fill:none;}
 	.st37{display:inline;fill:#FFFFFF;}
-
-
-
-
-
-
-	
