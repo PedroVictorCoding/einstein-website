@@ -1,0 +1,84 @@
+svg {
+	max-width: 500px;
+	width: device-width;
+	align-self: center;
+	align-items: center;
+	align-content: center;
+	justify-self: center;
+}
+
+svg #button1 {
+	animation-duration: 2.5s;
+	animation-name: animateLogo_buttonone;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+svg #button2 {
+	animation-duration: 2.5s;
+	animation-name: animateLogo_buttontwo;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+svg #button3 {
+	animation-duration: 2.5s;
+	animation-name: animateLogo_buttonthree;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+svg #button4 {
+	animation-duration: 2.5s;
+	animation-name: animateLogo_buttonfour;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+#Logo{
+	opacity: 0;
+}
+
+@keyframes animateLogo_buttonone {
+	from{
+		transform: translateX(10px) translateY(10px);
+		opacity: 0;
+	}
+	to{
+		transform: translateX(-10px) translateY(-10px);
+		opacity: 1;
+	}
+}
+
+@keyframes animateLogo_buttontwo {
+	from{
+		transform: translateX(0px) translateY(20px);
+		opacity: 0;
+	}
+	to{
+		transform: translateX(0px) translateY(0px);
+		opacity: 1;
+	}
+}
+
+@keyframes animateLogo_buttonthree {
+	from{
+		transform: translateX(0px) translateY(20px);
+		opacity: 0;
+	}
+	to{
+		transform: translateX(0px) translateY(0px);
+		opacity: 1;
+	}
+}
+
+@keyframes animateLogo_buttonfour {
+	from{
+		transform: translateX(-10px) translateY(10px);
+		opacity: 0;
+	}
+	to{
+		transform: translateX(10px) translateY(-10px);
+		opacity: 1;
+	}
+}
