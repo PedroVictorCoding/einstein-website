@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Russian</title>
+    <link href="../../Main.css" rel="stylesheet"/>
+    <script src="jquery-1.10.2.min.js"></script>
     <link rel="icon" type="image/png" href="../../favicon/fav.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../../css/russiandoll.css">
@@ -47,7 +49,7 @@
   <h3 class="menus" style="color:#5F7ADD; padding-left:20px; padding-top:20px;"><b>Russian</b></h3>
 <div class="classwrap">
     <h1><b>Speaking in Russian</b></h1>
-    
+
   <?xml version="1.0" encoding="utf-8"?>
   <svg version="1.1" id="matrioska1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
      viewBox="0 0 960 288" style="enable-background:new 0 0 960 288;" xml:space="preserve">
@@ -93,9 +95,44 @@
           <div style="color:#FFF" class="collapse" id="contents-collapse2" name="kinetic_potential_energy">
           <br>
           <!-- TODO: Add Videos and make pictures -->
-          <h3 style="margin-left:5px;margin-right:5px"></h3>
-          <h3 style="margin-left:5px;margin-right:5px"></h3>
-          <h3 style="margin-left:5px;margin-right:5px"></h3>
+          <h3 style="margin-left:5px;margin-right:5px">Let's learn how to greet someone in Russian</h3>
+          <script type="text/javascript">
+                var songs = ["sounds/Привет.mp3"]
+                var song = new Audio();
+                var currentSong = 0;    // it point to the current song
+
+                window.onload = playSong;   // it will call the function playSong when window is load
+
+                function playSong(){
+
+                    song.src = songs[currentSong];  //set the source of 0th song
+
+                    songTitle.textContent = songs[currentSong]; // set the title of song
+
+                    song.play();    // play the song
+                }
+
+                function playOrPauseSong(){
+
+                    if(song.paused){
+                        song.play();
+                        $("#play img").attr("src","../../Pause.png");
+                    }
+                    else{
+                        song.pause();
+                        $("#play img").attr("src","../../Play.png");
+                    }
+                }
+
+                song.addEventListener('timeupdate',function(){
+                    var position = song.currentTime / song.duration;
+                    fillBar.style.width = position * 100 +'%';
+                });
+            </script>
+
+          <button id="play" onclick="playOrPauseSong()"><img src="../../Pause.png"/></button><h3 style="margin-left:60px;margin-right:5px">Hello - Привет - Privet</h3>
+
+
           <h3 style="margin-left:5px;margin-right:5px"></h3>
           <h3 style="margin-left:5px;margin-right:5px"></h3>
           <h3 style="margin-left:5px;margin-right:5px"></h3>
