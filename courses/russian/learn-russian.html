@@ -44,10 +44,10 @@
     </style>
   </head>
   <body style="background:#FFF">
+<div style="margin-top:-20px" class="classwrap">
+  <a class="menus" style="background:#FFFFFF; color:#5F7ADD;" href="../../courses" rel="noopener"><b>Back</b></a>
+  <h3 class="menus" style="color:#FFFFFF; padding-left:20px; padding-top:20px;"><b>Russian</b></h3>
 
-  <a class="menus" style="background:#5F7ADD; color:#FFFFFF;" href="../../courses" rel="noopener"><b>Back</b></a>
-  <h3 class="menus" style="color:#5F7ADD; padding-left:20px; padding-top:20px;"><b>Russian</b></h3>
-<div class="classwrap">
     <h1><b>Speaking in Russian</b></h1>
 
   <?xml version="1.0" encoding="utf-8"?>
@@ -89,12 +89,23 @@
     </div>
 
 <br>
+<div style="padding-top:5px;padding-bottom:10px;border-radius:10px;background:#5F7ADD;margin-left:10px;margin-right:10px">
+  <a style="background:#3A3A3A; color:#FFFFFF;" data-toggle="collapse" data-target="#contents-collapse2"><b>Click for more</b></a>
+        <h3 style="color:#FFF; margin-left:10px"><b>Characters</b></h3>
+        <div style="color:#FFF" class="collapse" id="contents-collapse2">
+  <p>
+    {Content}
+    <br>
+    {Content}
+  </p>
+  </div>
+  </div>
+<br>
       <div style="padding-top:5px;padding-bottom:10px;border-radius:10px;background:#5F7ADD;margin-left:10px;margin-right:10px">
-        <a style="background:#3A3A3A; color:#FFFFFF; float:right; " data-toggle="collapse" data-target="#contents-collapse2"><b>Click for more</b></a>
+        <a style="background:#3A3A3A; color:#FFFFFF; float:right; " data-toggle="collapse" data-target="#contents-collapse3"><b>Click for more</b></a>
         <h3 style="color:#FFF; margin-left:10px"><b>Greetings</b></h3>
-          <div style="color:#FFF" class="collapse" id="contents-collapse2" name="kinetic_potential_energy">
+          <div style="color:#FFF" class="collapse" id="contents-collapse3" name="kinetic_potential_energy">
           <br>
-          <!-- TODO: Add Videos and make pictures -->
           <h3 style="margin-left:5px;margin-right:5px">Let's learn how to greet someone in Russian</h3>
           <script type="text/javascript">
 
@@ -102,31 +113,69 @@
                     var sound = new Audio("sounds/Привет.mp3");
                     if(sound.paused){
                         sound.play();
-                        $("#play img").attr("src","../../Play.png");
                     }
                     else{
                         sound.play();
                         sound.pause();
-                        $("#play img").attr("src","../../Play.png");
                     }
                 }
-
                 function playOrPauseSong_Доброе_утро(){
                   var song = new Audio("sounds/Доброе_утро.mp3");
                     if(song.paused){
                         song.play("sounds/Доброе_утро.mp3");
-                        $("#play img").attr("src","../../Play.png");
                     }
                     else{
                         song.play("sounds/_Доброе_утро.mp3");
                         song.pause();
-                        $("#play img").attr("src","../../Play.png");
+                    }
+                }
+                function playOrPauseSong_Добрый_день(){
+                  var song = new Audio("sounds/Добрый_день.mp3");
+                    if(song.paused){
+                        song.play("sounds/Добрый_день.mp3");
+                    }
+                    else{
+                        song.play("sounds/Добрый_день.mp3");
+                        song.pause();
+                    }
+                }
+                function playOrPauseSong_Добрый_вечер(){
+                  var song = new Audio("sounds/Добрый_день.mp3");
+                    if(song.paused){
+                        song.play("sounds/Добрый_день.mp3");
+                    }
+                    else{
+                        song.play("sounds/Добрый_день.mp3");
+                        song.pause();
+                    }
+                }
+                function playOrPauseSong_Добрый_вечер(){
+                  var song = new Audio("sounds/Добрый_вечер.mp3");
+                    if(song.paused){
+                        song.play("sounds/Добрый_вечер.mp3");
+                    }
+                    else{
+                        song.play("sounds/Добрый_вечер.mp3");
+                        song.pause();
+                    }
+                }
+                function playOrPauseSong_Как_твои_дела(){
+                  var song = new Audio("sounds/Как_твои_дела.mp3");
+                    if(song.paused){
+                        song.play("sounds/Как_твои_дела.mp3");
+                    }
+                    else{
+                        song.play("sounds/Как_твои_дела.mp3");
+                        song.pause();
                     }
                 }
 
             </script>
           <button id="play" onclick="playOrPauseSong_Привет()"><img src="../../Play.png"/></button><h3 style="margin-left:60px;margin-right:5px">Hello - Привет - Privet</h3>
-          <button id="play" onclick="playOrPauseSong_Доброе_утро()"><img src="../../Play.png"/></button><h3 style="margin-left:60px;margin-right:5px">Good Morning - Доброе утро - Privet</h3>
+          <button id="play" onclick="playOrPauseSong_Доброе_утро()"><img src="../../Play.png"/></button><h3 style="margin-left:60px;margin-right:5px">Good Morning - Доброе утро - Dobroye utro</h3>
+          <button id="play" onclick="playOrPauseSong_Добрый_день()"><img src="../../Play.png"/></button><h3 style="margin-left:60px;margin-right:5px">Good Afternoon - Добрый день - Dobryy den'</h3>
+          <button id="play" onclick="playOrPauseSong_Добрый_вечер()"><img src="../../Play.png"/></button><h3 style="margin-left:60px;margin-right:5px">Good Evening - Добрый вечер - Dobryy vecher</h3>
+          <button id="play" onclick="playOrPauseSong_Как_твои_дела()"><img src="../../Play.png"/></button><h3 style="margin-left:60px;margin-right:5px">How are you? - Как твои дела - Kak tvoi dela</h3>
 
 
 
